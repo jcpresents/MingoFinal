@@ -1,0 +1,1294 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>MINGO</title>
+
+         <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+         <!-- Bootstrap CDN 5.1.3 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <!-- Bootstrap Icon CDN 1.8.1 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+         <!-- CSS Stylesheet-->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <!-- navigation bar container -->
+        <nav>
+            <!-- Internal Website Navigation bar -->
+            <ul class="main-nav">
+                <li><a href="index.html">MINGO</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="push">
+                <ul class="main-nav">
+                    <li><a id="active" href="index.html">2022</a></li>
+                    <li><a href="about.html">2021</a></li>
+                    <li><a href="contact.html">2020</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!--
+        <a class="letter-container-sm" data-toggle="collapse" href="#collapseM" role="button" aria-expanded="false" aria-controls="collapseM">M</a>
+            <div class="collapse" id="collapseM">
+                <a href="#poster1" name="return1"><button onclick="showDescription1()"><div class="movie"><img src="./images/rush-hour.webp" alt="The Guest"><div class="centered-txt"></div></div></button></a>
+                <a href="#poster2" name="return2"><button onclick="showDescription2()"><div class="movie"><img src="./images/get-out.webp" alt="Austin Powers"><div class="centered-txt"></div></div></button></a>
+                <a href="#poster3" name="return3"><button onclick="showDescription3()"><div class="movie"><img src="./images/scott-pilgrim.webp" alt="The Tree of Life"><div class="centered-txt"></div></div></button></a>
+                <a href="#poster4" name="return4"><button onclick="showDescription4()"><div class="movie"><img src="./images/space-jam.webp" alt="Observe and Report"><div class="centered-txt"></div></div></button></a>
+                <a href="#poster5" name="return5"><button onclick="showDescription5()"><div class="movie"><img src="./images/braveheart.webp" alt="Zootopia"><div class="centered-txt"></div></div></button></a>
+            </div>
+        -->
+
+        <!-- Animated BG Movie Player -->
+        <div>
+            <video playsinline autoplay muted loop>
+              <source src="images/BG/confetti3.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="frame">
+            <div class="container-fluid">
+                <div class="row">
+                    <br><br><br><br><br><br>
+                </div>	
+                <div class="row">
+
+                    <!-- This whole container is hidden on mobile using the hider class -->
+                    <div class="container hider">
+                        <!-- MINGO LETTER ROW-->
+                        <div class="letter-container-nm">M</div>
+                        <div class="letter-container-nm">I</div>
+                        <div class="letter-container-nm">N</div>
+                        <div class="letter-container-nm">G</div>
+                        <div class="letter-container-nm">O</div>
+                        <!-- FIRST ROW -->
+                        <a href="#poster1" name="return1"><button type="button" data-bs-toggle="modal" data-bs-target="#modal1"><div class="movie"><img src="./images/rush-hour.webp" alt="Rush Hour"><div class="centered-txt"></div></div></button></a>
+                        <a href="#poster2" name="return2"><button type="button" data-bs-toggle="modal" data-bs-target="#modal2"><div class="movie"><img src="./images/get-out.webp" alt="Get Out"><div class="centered-txt"></div></div></button></a>
+                        <a href="#poster3" name="return3"><button type="button" data-bs-toggle="modal" data-bs-target="#modal3"><div class="movie"><img src="./images/scott-pilgrim.webp" alt="Scott Pilgrim vs. the World"><div class="centered-txt"></div></div></button></a>
+                        <a href="#poster4" name="return4"><button type="button" data-bs-toggle="modal" data-bs-target="#modal4"><div class="movie"><img src="./images/space-jam.webp" alt="Space Jam"><div class="centered-txt"></div></div></button></a>
+                        <a href="#poster5" name="return5"><button type="button" data-bs-toggle="modal" data-bs-target="#modal5"><div class="movie"><img src="./images/braveheart.webp" alt="Braveheart"><div class="centered-txt"></div></div></button></a>                           
+                        <!-- SECOND ROW -->
+                        <a href="#poster6" name="return6"><button type="button" data-bs-toggle="modal" data-bs-target="#modal6"><div class="movie"><img src="./images/a-scanner-darkly.webp" alt="A Scanner Darkly"><div class="centered-txt"></div></div></button></a>
+                        <a href="#poster7" name="return7"><button type="button" data-bs-toggle="modal" data-bs-target="#modal7"><div class="movie"><img src="./images/the-godfather.webp" alt="The Godfather"><div class="centered-txt"></div></div></button></a>
+                        <a href="#poster8" name="return8"><button type="button" data-bs-toggle="modal" data-bs-target="#modal8"><div class="movie"><img src="./images/walk-hard.webp" alt="Walk Hard"><div class="centered-txt"></div></div></button></a>
+                        <a href="#poster9" name="return9"><button type="button" data-bs-toggle="modal" data-bs-target="#modal9"><div class="movie"><img src="./images/ballad-of-buster-scruggs.webp" alt="The Ballad of Buster Scruggs"><div class="centered-txt"></div></div></button></a>
+                        <a href="#poster10" name="return10"><button type="button" data-bs-toggle="modal" data-bs-target="#modal10"><div class="movie"><img src="./images/rat-race.webp" alt="Rat Race"><div class="centered-txt"></div></div></button></a>
+                        <!-- THIRD ROW -->
+                        <a href="#poster11" name="return11"><button type="button" data-bs-toggle="modal" data-bs-target="#modal11"><div class="movie"><img src="./images/who-framed-roger-rabbit.webp" alt="Who Framed Roger Rabbit"><div class="centered-txt"></div></div></button></a>
+                        <a href="#poster12" name="return12"><button type="button" data-bs-toggle="modal" data-bs-target="#modal12"><div class="movie"><img src="./images/darkman.webp" alt="Darkman"><div class="centered-txt"></div></div></button></a>
+                        <a href="#poster13" name="return13"><button type="button" data-bs-toggle="modal" data-bs-target="#modal13"><div class="movie"><img src="./images/darkman.webp" alt=""><div class="centered-txt">Free Space</div></div></button></a>
+                        <a href="#poster14" name="return14"><button type="button" data-bs-toggle="modal" data-bs-target="#modal14"><div class="movie"><img src="./images/the-producers.webp" alt="The Producers"><div class="centered-txt"></div></div></button></a>
+                        <a href="#poster15" name="return15"><button type="button" data-bs-toggle="modal" data-bs-target="#modal15"><div class="movie"><img src="./images/nightbreed.webp" alt="Nightbreed"><div class="centered-txt"></div></div></button></a>
+                        <!-- FOURTH ROW -->
+                        <a href="#poster16" name="return16"><button type="button" data-bs-toggle="modal" data-bs-target="#modal16"><div class="movie"><img src="./images/sleeper.webp" alt="Sleeper"><div class="centered-txt"></div></div></button></a>
+                        <a href="#poster17" name="return17"><button type="button" data-bs-toggle="modal" data-bs-target="#modal17"><div class="movie"><img src="./images/grave-of-the-fireflies.webp" alt="Grave of the Fireflies"><div class="centered-txt"></div></div></button></a>
+                        <a href="#poster18" name="return18"><button type="button" data-bs-toggle="modal" data-bs-target="#modal18"><div class="movie"><img src="./images/beavis-and-butt-head-do-america.webp" alt="Beavis and Butt-Head Do America"><div class="centered-txt"></div></div></button></a>
+                        <a href="#poster19" name="return19"><button type="button" data-bs-toggle="modal" data-bs-target="#modal19"><div class="movie"><img src="./images/once-upon-a-time-in-hollywood.webp" alt="Once Upon a Time in Hollywood"><div class="centered-txt"></div></div></button></a>
+                        <a href="#poster20" name="return20"><button type="button" data-bs-toggle="modal" data-bs-target="#modal20"><div class="movie"><img src="./images/terminator-2.webp" alt="Terminator 2"><div class="centered-txt"></div></div></button></a>
+                        <!-- FIFTH ROW -->
+                        <a href="#poster21" name="return21"><button type="button" data-bs-toggle="modal" data-bs-target="#modal21"><div class="movie"><img src="./images/parasite.webp" alt="Parasite"><div class="centered-txt"></div></div></button></a>
+                        <a href="#poster22" name="return22"><button type="button" data-bs-toggle="modal" data-bs-target="#modal22"><div class="movie"><img src="./images/mary-poppins.webp" alt="Mary Poppins"><div class="centered-txt"></div></div></button></a>
+                        <a href="#poster23" name="return23"><button type="button" data-bs-toggle="modal" data-bs-target="#modal23"><div class="movie"><img src="./images/worlds-greatest-dad.webp" alt="World's Greatest Dad"><div class="centered-txt"></div></div></button></a>
+                        <a href="#poster24" name="return24"><button type="button" data-bs-toggle="modal" data-bs-target="#modal24"><div class="movie"><img src="./images/blue-ruin.webp" alt="Blue Ruin"><div class="centered-txt"></div></div></button></a>
+                        <a href="#poster25" name="return25"><button type="button" data-bs-toggle="modal" data-bs-target="#modal25"><div class="movie"><img src="./images/muppet-treasure-island.webp" alt="Muppet Treasure Island"><div class="centered-txt"></div></div></button></a>
+                    </div>
+
+                    <!-- This container is used to display the collapsing mobile grid -->
+                    <div class="container">
+                        <!-- FIRST ROW -->                            
+                        <div class="letter-container-sm"><button onclick="collapseM()">M</button></div>
+                        <div id="rowM" class="letter-container-sm collapse">
+                            <a href="#poster1" name="return1"><button type="button" data-bs-toggle="modal" data-bs-target="#modal1"><div class="movie"><img src="./images/rush-hour.webp" alt="Rush Hour"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster2" name="return2"><button type="button" data-bs-toggle="modal" data-bs-target="#modal2"><div class="movie"><img src="./images/get-out.webp" alt="Get Out"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster3" name="return3"><button type="button" data-bs-toggle="modal" data-bs-target="#modal3"><div class="movie"><img src="./images/scott-pilgrim.webp" alt="Scott Pilgrim vs. the World"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster4" name="return4"><button type="button" data-bs-toggle="modal" data-bs-target="#modal4"><div class="movie"><img src="./images/space-jam.webp" alt="Space Jam"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster5" name="return5"><button type="button" data-bs-toggle="modal" data-bs-target="#modal5"><div class="movie"><img src="./images/braveheart.webp" alt="Braveheart"><div class="centered-txt"></div></div></button></a>                           
+                        </div>  
+                        <!-- SECOND ROW -->
+                        <div class="letter-container-sm"><button onclick="collapseI()">I</button></div>
+                        <div id="rowI" class="letter-container-sm collapse">
+                            <a href="#poster6" name="return6"><button type="button" data-bs-toggle="modal" data-bs-target="#modal6"><div class="movie"><img src="./images/a-scanner-darkly.webp" alt="A Scanner Darkly"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster7" name="return7"><button type="button" data-bs-toggle="modal" data-bs-target="#modal7"><div class="movie"><img src="./images/the-godfather.webp" alt="The Godfather"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster8" name="return8"><button type="button" data-bs-toggle="modal" data-bs-target="#modal8"><div class="movie"><img src="./images/walk-hard.webp" alt="Walk Hard"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster9" name="return9"><button type="button" data-bs-toggle="modal" data-bs-target="#modal9"><div class="movie"><img src="./images/ballad-of-buster-scruggs.webp" alt="The Ballad of Buster Scruggs"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster10" name="return10"><button type="button" data-bs-toggle="modal" data-bs-target="#modal10"><div class="movie"><img src="./images/rat-race.webp" alt="Rat Race"><div class="centered-txt"></div></div></button></a>
+                        </div>
+                        <!-- THIRD ROW -->
+                        <div class="letter-container-sm"><button onclick="collapseN()">N</button></div>
+                        <div id="rowN" class="letter-container-sm collapse">
+                            <a href="#poster11" name="return11"><button type="button" data-bs-toggle="modal" data-bs-target="#modal11"><div class="movie"><img src="./images/who-framed-roger-rabbit.webp" alt="Who Framed Roger Rabbit"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster12" name="return12"><button type="button" data-bs-toggle="modal" data-bs-target="#modal12"><div class="movie"><img src="./images/darkman.webp" alt="Darkman"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster13" name="return13"><button type="button" data-bs-toggle="modal" data-bs-target="#modal13"><div class="movie"><img src="./images/darkman.webp" alt=""><div class="centered-txt">Free Space</div></div></button></a>
+                            <a href="#poster14" name="return14"><button type="button" data-bs-toggle="modal" data-bs-target="#modal14"><div class="movie"><img src="./images/the-producers.webp" alt="The Producers"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster15" name="return15"><button type="button" data-bs-toggle="modal" data-bs-target="#modal15"><div class="movie"><img src="./images/nightbreed.webp" alt="Nightbreed"><div class="centered-txt"></div></div></button></a>
+                        </div>
+                        <!-- FOURTH ROW -->
+                        <div class="letter-container-sm"><button onclick="collapseG()">G</button></div>
+                        <div id="rowG" class="letter-container-sm collapse">
+                            <a href="#poster16" name="return16"><button type="button" data-bs-toggle="modal" data-bs-target="#modal16"><div class="movie"><img src="./images/sleeper.webp" alt="Sleeper"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster17" name="return17"><button type="button" data-bs-toggle="modal" data-bs-target="#modal17"><div class="movie"><img src="./images/grave-of-the-fireflies.webp" alt="Grave of the Fireflies"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster18" name="return18"><button type="button" data-bs-toggle="modal" data-bs-target="#modal18"><div class="movie"><img src="./images/beavis-and-butt-head-do-america.webp" alt="Beavis and Butt-Head Do America"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster19" name="return19"><button type="button" data-bs-toggle="modal" data-bs-target="#modal19"><div class="movie"><img src="./images/once-upon-a-time-in-hollywood.webp" alt="Once Upon a Time in Hollywood"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster20" name="return20"><button type="button" data-bs-toggle="modal" data-bs-target="#modal20"><div class="movie"><img src="./images/terminator-2.webp" alt="Terminator 2"><div class="centered-txt"></div></div></button></a>
+                        </div>
+                        <!-- FIFTH ROW -->
+                        <div class="letter-container-sm"><button onclick="collapseO()">O</button></div>
+                        <div id="rowO" class="letter-container-sm collapse">
+                            <a href="#poster21" name="return21"><button type="button" data-bs-toggle="modal" data-bs-target="#modal21"><div class="movie"><img src="./images/parasite.webp" alt="Parasite"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster22" name="return22"><button type="button" data-bs-toggle="modal" data-bs-target="#modal22"><div class="movie"><img src="./images/mary-poppins.webp" alt="Mary Poppins"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster23" name="return23"><button type="button" data-bs-toggle="modal" data-bs-target="#modal23"><div class="movie"><img src="./images/worlds-greatest-dad.webp" alt="World's Greatest Dad"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster24" name="return24"><button type="button" data-bs-toggle="modal" data-bs-target="#modal24"><div class="movie"><img src="./images/blue-ruin.webp" alt="Blue Ruin"><div class="centered-txt"></div></div></button></a>
+                            <a href="#poster25" name="return25"><button type="button" data-bs-toggle="modal" data-bs-target="#modal25"><div class="movie"><img src="./images/muppet-treasure-island.webp" alt="Muppet Treasure Island"><div class="centered-txt"></div></div></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <br><br><br><br><br><br>
+                </div>	
+            </div>
+        </div>
+      
+        <!-- Experimental modular modal -->
+        <!-- <div class="modal fade" id="exampleModal" tabindex="3" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" style="float:right;" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div id="swapper">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  -->
+
+        <!-- <div id="description1">
+            <div class="container-column">
+                <article>
+                    <div class="article-img"><img src="./images/rush-hour.webp"></div>
+                    <div class="article-txt">
+                        <div class="entry">
+                            <div>
+                                <br>
+                                <div class="title">Title</div>
+                                <br>
+                                Quality 1: *****
+                                <br>
+                                Quality 2: *****
+                                <br><br>
+                                <div>
+                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                </div>
+                            </div>
+                            <a name="poster1" href="#return1">RETURN TO MOVIE POSTER</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div> -->
+
+        <!-- DESCRIPTIONS FIRST ROW -->
+        <div class="modal fade" id="modal1" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/rush-hour.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="modal2" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/get-out.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="modal3" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/scott-pilgrim.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="modal4" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/space-jam.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="modal5" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/braveheart.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <!-- DESCRIPTIONS SECOND ROW -->
+        <div class="modal fade" id="modal6" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/a-scanner-darkly.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="modal7" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/the-godfather.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="modal8" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/walk-hard.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="modal9" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/ballad-of-buster-scruggs.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="modal10" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/rat-race.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <!-- DESCRIPTIONS THIRD ROW -->
+        <div class="modal fade" id="modal11" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/who-framed-roger-rabbit.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="modal12" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/darkman.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="modal13" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/darkman.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="modal14" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/the-producers.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="modal15" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/nightbreed.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="modal16" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/sleeper.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <!-- DESCRIPTIONS FOURTH ROW -->
+        <div class="modal fade" id="modal17" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/grave-of-the-fireflies.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="modal18" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/beavis-and-butt-head-do-america.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="modal19" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/once-upon-a-time-in-hollywood.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="modal20" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/terminator-2.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="modal21" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/parasite.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <!-- DESCRIPTIONS FIFTH ROW -->
+        <div class="modal fade" id="modal22" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/mary-poppins.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="modal23" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/worlds-greatest-dad.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="modal24" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/blue-ruin.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="modal25" tabindex="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="description1">
+                            <div class="container-column">
+                                <article>
+                                    <div class="article-img"><img src="./images/muppet-treasure-island.webp"></div>
+                                    <div class="article-txt">
+                                        <div class="entry">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div>
+                                                <br>
+                                                <div class="title">Title</div>
+                                                <br>
+                                                Quality 1: 
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br>
+                                                Quality 2:
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <img class="star" src="./images/BG/star.png">
+                                                <br><br>
+                                                <div>
+                                                    Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        
+    <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-txt">FOOTER</div>
+            <div class="footer-txt">&copy; MINGO 2022</div>
+            <div class="footer-txt">FOOTER</div>
+        <footer>
+
+    <!-- JavaScript Stylesheet -->
+        <script src="./scripts.js"></script>
+
+        <!-- JavaScript Stylesheet -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    </body>
+</html>
